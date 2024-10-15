@@ -8,13 +8,13 @@ export default function RisingFlameEmojis() {
 	useEffect(() => {
 		const createFlames = () => {
 			const newFlames = [];
-			const flameCount = Math.floor(window.innerWidth / 15); // Adjust for more/fewer flames
+			const flameCount = Math.floor(window.innerWidth / 10); // Adjust for more/fewer flames
 
 			for (let i = 0; i < flameCount; i++) {
 				const left = `${Math.random() * 100}%`;
 				const animationDuration = 4 + Math.random() * 3; // Between 4 and 7 seconds
-				const size = 24 + Math.random() * 24; // Size between 1rem and 2rem
-				const delay = Math.random() * 5; // Random delay up to 5 seconds
+				const size = 52 + Math.random() * 52; // Size between 1rem and 2rem
+				const delay = Math.random() * 3; // Random delay up to 5 seconds
 
 				newFlames.push(
 					<div
@@ -55,7 +55,7 @@ export default function RisingFlameEmojis() {
 						opacity: 1;
 					}
 					100% {
-						transform: translateY(-110vh) scale(0.5);
+						transform: translateY(-110vh) scale(0.7);
 						opacity: 0;
 					}
 				}
