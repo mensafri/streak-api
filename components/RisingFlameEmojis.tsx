@@ -27,7 +27,7 @@ export default function RisingFlameEmojis() {
 							animation: `rise ${animationDuration}s ease-in infinite`,
 							animationDelay: `${delay}s`,
 						}}>
-						🔥
+						🎂
 					</div>,
 				);
 			}
@@ -41,6 +41,9 @@ export default function RisingFlameEmojis() {
 
 	return (
 		<div className="fixed inset-0 overflow-hidden bg-black">
+			<p className="text-[10rem] text-white relative flex justify-center items-center h-screen">
+				HBD BITAAK !
+			</p>
 			{flames}
 			<style jsx>{`
 				@keyframes rise {
